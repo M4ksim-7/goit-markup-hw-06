@@ -36,7 +36,31 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+
+.container {
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/**-------HEADER-------*/
 
 .header {
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
@@ -48,13 +72,6 @@ img {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-}
-
-.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 }
 
 .header-section {
@@ -141,6 +158,8 @@ img {
   color: #404bbf;
 }
 
+/**-------HERO-------*/
+
 .hero {
   max-width: 1440px;
   margin: 0 auto;
@@ -191,35 +210,25 @@ img {
   background-color: #404bbf;
 }
 
-.section-slogan {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+/**-------SECTION-SLOGAN-------*/
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.section-slogan {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .section-slogan-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 72px;
 }
 
 .section-slogan-item {
-  width: calc((100% - 24px * 3) / 4);
+  width: 100%;
 }
 
 .slogan-icon-container {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -230,26 +239,33 @@ img {
 }
 
 .section-slogan-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .section-slogan-text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
+/**-------SECTION-TEAM-------*/
+
 .section-team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.container.team-container {
+  max-width: 296px;
 }
 
 .section-team-item {
@@ -271,7 +287,8 @@ img {
 
 .section-team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 72px;
 }
 
 .section-team-item {
@@ -336,9 +353,11 @@ img {
   fill: #f4f4fd;
 }
 
+/**-------SECTOIN-PORTFOLIO-------*/
+
 .section-portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .section-portfolio-title {
@@ -356,7 +375,7 @@ img {
 .section-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  row-gap: 48px;
 }
 
 .section-portfolio-item {
@@ -414,6 +433,8 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/**-------FOOTER-------*/
 
 .footer {
   background-color: #2e2f42;
@@ -559,6 +580,8 @@ img {
   fill: #ffffff;
   margin-left: 16px;
 }
+
+/**-------OVERLAY-------*/
 
 .overlay {
   width: 100%;
