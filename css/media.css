@@ -122,6 +122,41 @@
     }
 
     /**-------FOOTER-------*/
+
+    .footer-section {
+        padding-right: 108px;
+        padding-left: 108px;
+    }
+
+    .footer-logo-container {
+        display: block;
+        max-width: 264px;
+    }
+
+    .footer-socials {
+        display: block;
+        margin-left: 24px;
+    }
+
+    .footer-sub {
+        display: block;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-email {
+        max-width: 264px;
+    }
+
+    /**-------OVERLAY-------*/
+
+    .modal {
+        width: 408px;
+        padding: 72px 24px 24px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -254,4 +289,22 @@
     }
 
     /**-------FOOTER-------*/
-}
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .footer-section {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .footer-socials {
+        margin-left: 120px;
+    }
+
+    .footer-email {
+        width: 264px;
+    }
+} 
